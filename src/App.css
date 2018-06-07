@@ -1,0 +1,23 @@
+#slider-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.slider-block {
+  margin: 5px;
+  background-color: LightGray;
+  font-size: 64px;
+  flex-basis: 25%;
+  flex-grow: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.slider-block_zero {
+  background-color: white;
+  z-index: -1; /* Prevent the empty block from going over non-empty ones during animation */
+}
+
+.slider-block-1 {
+  background-color: blue;
+}
